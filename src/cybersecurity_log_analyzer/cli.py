@@ -26,8 +26,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     try:
-        contents = args.input_file.read_text(encoding="utf-8")
-        report = analyze_lines(contents.splitlines(), args.threshold)
+        with args.input_file.open("r", encoding="utf-8") as input_file:
+            report = analyze_lines(input_file, args.threshold)
     except FileNotFoundError:
         print(f"Input file not found: {args.input_file}", file=sys.stderr)
         return 2
