@@ -146,3 +146,7 @@ samples/                         synthetic input data only
 This first version supports one deliberately small log format, local files, and a simple repeated-failure rule. It does not correlate events across systems, make incident-response decisions, or replace professional security tooling.
 
 Possible future improvements include additional authorized log formats, CSV export, richer time-window analysis, and more defensive test fixtures.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for the full text.

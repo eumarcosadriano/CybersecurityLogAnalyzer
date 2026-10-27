@@ -7,3 +7,12 @@ venv/
 .coverage
 dist/
 build/
+
+# Local logs and sensitive configuration
+*.log
+!samples/*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
